@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certification Project</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <style>
+        @font-face {
+            font-family: lobster;
+            src: url(lobster.otf);
+        }
+
+        body{
+            font-family: lobster;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container-fluid bg-dark">
+        <h2 class="text-light text-center p-3">Certification Project</h2>
+    </div>
+    
+    <!-- Carousel -->
+
+    <div class="container">
+        <h2>Bootstrap Carousel</h2>
+        <div id="carousel-demo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/image1.jpg" class="d-block w-100" alt="img1">
+              </div>
+              <div class="carousel-item">
+                <img src="images/image2.jpg" class="d-block w-100" alt="img2">
+              </div>
+              <div class="carousel-item">
+                <img src="images/image3.jpg" class="d-block w-100" alt="img3">
+              </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <br>
+        <hr>
+        <br>
+    </div>
+    
+    <!-- Charts -->
+    <div class="container text-center">
+        <h2>Google Charts</h2><br>
+        <div id="myChart"></div>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <!-- Google Maps -->
+    <div class="container text-center">
+        <h2>Google Map</h2>
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+        <br>
+        <hr>
+        <br>
+    </div>
+
+    <!-- Font change -->
+    <div class="container text-center" id="lobster">
+        <h2>Lobster font</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    
+    
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9e6JRIrR8z31l00bTq_a_szHQop_y5KA&callback=myMap"></script>
+</body>
+</html>
